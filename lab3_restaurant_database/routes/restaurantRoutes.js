@@ -17,7 +17,6 @@ app.get('/restaurants', async (req, res) => {
 });
 
 //get by CUISINE
-//***this is the one thats showing up in terminal not postman for some reason***
 //http://localhost:3000/restaurants/cuisine/Japanese
 app.get('/restaurants/cuisine/:cuisine', async (req, res) =>{
   const type = req.params.cuisine
