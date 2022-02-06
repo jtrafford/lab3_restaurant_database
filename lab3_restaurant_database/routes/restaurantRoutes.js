@@ -25,6 +25,7 @@ app.get('/restaurants/cuisine/:cuisine', async (req, res) =>{
 
   try {
     console.log(restaurants) 
+    res.send(restaurants)
   } catch (err) {
     res.status(500).send(err);
   }
